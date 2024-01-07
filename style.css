@@ -1,0 +1,217 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+.header{
+    height: 120vh;
+    width: 100%;
+    background-image: url(coad.png);
+    background-size: cover;
+    background-position: center;
+   
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: top 45px; 
+    padding-left: 8%;
+    padding-right: 8%;
+    position: fixed;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    font-weight: bolder;
+}
+nav ul li a:hover{
+    color: red;
+    transition: 0.5s;
+}
+.content{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+h1{
+    color: palevioletred;
+}
+.about{
+    background-color: black;
+    padding: 100px 0px;
+    width: 100%;
+}
+.main{
+    width: 1000px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    font-size: 45px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h4{
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+
+}
+.about-text p{
+    color: aquamarine;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+button{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 15px;
+    border-radius: 20px;
+}
+.skills{
+    background-color: black;
+    text-align: center;
+    height: 70vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin: auto;
+
+}
+.container{
+    display: flex;
+    gap: 60px;
+    animation: scroll 40s linear infinite;
+}
+.skills h1{
+    color: white;
+   
+   
+}
+.card{
+    border-radius: 30px;
+    min-height: 200px;
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.card:nth-child(odd){
+    background:linear-gradient(-229deg,yellow,rgb(241, 5, 45))
+}
+.card:nth-child(even){
+    background:linear-gradient(-229deg,rgb(10, 239, 2),blue)
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*5));
+    }
+}
+.box{
+    height: 100vh;
+    background-color: black;
+}
+.box{
+    color: white;
+    text-align: center;
+
+}
+.Testimonials{
+    display: flex;
+    min-height: 400px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.test{
+    height: 360px;
+    width: 330px;
+    padding: 20px 30px;
+    background-color: rgb(249, 9, 89);
+    margin: 15px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.box h5{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.box h1{
+    color: white;
+}
+.contact{
+    color: white;
+    background-color: black;
+    height: 70vh;
+    width: 100%;
+}
+.contact-box{
+    display: flex;
+    background: #faa404;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    color: black;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: rgb(64, 64, 64);
+}
+.contact h1{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.contact-leftinput{
+    color: black;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis: 45px;
+}
+.input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid black;
+}
+label{
+    margin-bottom: 5px;
+    display: flexbox;
+    color: black;
+
+}
+tr td:first-child{
+    padding-right:25px ;
+    padding-bottom: 5px;
+}
